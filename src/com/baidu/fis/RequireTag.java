@@ -9,14 +9,16 @@ public class RequireTag extends TagSupport {
 	 * 
 	 */
 	private static final long serialVersionUID = 8694856279353734532L;
-	
+
 	private String id;
-	
+
 	public int doStartTag() {
-		HttpServletRequest request = (HttpServletRequest) pageContext.getRequest();
-		Resource resource = (Resource) request.getAttribute(Resource.CONTEXT_ATTR_NAME);
+		HttpServletRequest request = (HttpServletRequest) pageContext
+				.getRequest();
+		Resource resource = (Resource) request
+				.getAttribute(Resource.CONTEXT_ATTR_NAME);
 		try {
-			resource.require(this.id);
+			resource.require(this.id, request.getContextPath());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

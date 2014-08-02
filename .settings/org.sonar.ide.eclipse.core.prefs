@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+extraProperties=sonar.jdbc.username\=sonar\r\nsonar.host.url\=http\://192.168.18.222\:8006\r\nsonar.jdbc.password\=sonar\r\nsonar.jdbc.url\=jdbc\:mysql\://192.168.18.222\:3306/sonar?useUnicode\=true&characterEncoding\=utf8
+projectKey=com.baidu\:fis
+serverUrl=http\://localhost\:9000
+version=2
